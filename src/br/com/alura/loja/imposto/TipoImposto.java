@@ -1,7 +1,10 @@
 package br.com.alura.loja.imposto;
 
-public enum TipoImposto {
+import br.com.alura.loja.Orcamento;
 
-    ICMS,
-    ISS;
+import java.math.BigDecimal;
+
+public interface TipoImposto {
+
+    BigDecimal calcular(Orcamento orcamento);
 }
